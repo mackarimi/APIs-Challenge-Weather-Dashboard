@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>5 Days Weather Forecast</title>
+</head>
+
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+    <h5>
+      Current Time &amp; Date: <br />
+      <span id="time-display"></span>
+    </h5>
+    <!-- <h1>What's the Forecast?</h1> -->
+    <!-- crimson text -->
+  </header>
+
+  <section class="search-container">
+    <div id="error-container"></div>
+    <input type="text" placeholder="Enter zip code or city name..." id="search-input" autocomplete="off" />
+    <button class="button" type="button" id="search-btn"><strong>Search</strong></button>
+
+
+    </div>
+
+
+    <!-- recent search container history  -->
+
+    <div id="recent-search" class="history-container hide-element">
+
+
+    </div>
+    <button id="clear-btn" class="button">Clear Recent Search</button>
+
+
+
+
+  </section>
+  <main class="container">
+
+    <div class="current-weather card-day" id="current-search">
+      <h2>Current Weather</h2>
+      <div id="current-weather-container">
+        <div id="current-weather-info">
+          <p id="current-city-name" class="current-city"></p>
+          <img src="" alt="" id="current-weather-icon" />
+          <p id="current-date"></p>
+          <p id="current-temp"></p>
+          <p id="current-wind"></p>
+          <p id="current-humidity"></p>
+        </div>
+        <div id="current-weather"></div>
+        <p id="current-temp"></p>
+        <p id="current-wind"></p>
+        <p id="current-humidity"></p>
+
+
+      </div>
+
+
+    </div>
+
+    <div class="forecast">
+      <!-- 5 day forecast -->
+      <h2 class="card-banner">5-Day Forecast</h2>
+      <div class="forecast-container">
+        <!--  Day 1 forecast -->
+        <!-- 5 day forecast for each day 
+
+  - Date OF Forecast as a title
+  - Icon image
+  - Temperature
+  - Wind speed
+  - Humidity
+-->
+        <div class="card-day">
+
+          <h3 class="date">Day-1</h3>
+          <img src="" alt="" id="forecast-icon1" />
+          <p id="temp">Temp:</p>
+          <p id="wind">Wind:</p>
+          <p id="humidity">Humidity</p>
+        </div>
+        <div class="card-day">
+          <h3 class="date">Day-2</h3>
+          <img src="" alt="" id="forecast-icon2" />
+          <p id="temp">Temp:</p>
+          <p id="wind">Wind:</p>
+          <p id="humidity">Humidity</p>
+        </div>
+
+        <div class="card-day">
+          <h3 class="date">Day-3</h3>
+          <img src="" alt="" id="forecast-icon3" />
+          <p id="temp">Temp:</p>
+          <p id="wind">Wind:</p>
+          <p id="humidity">Humidity</p>
+        </div>
+        <div class="card-day">
+          <h3 class="date">Day-4</h3>
+          <img src="" alt="" id="forecast-icon4" />
+          <p id="temp">Temp:</p>
+          <p id="wind">Wind:</p>
+          <p id="humidity">Humidity</p>
+        </div>
+        <div class="card-day">
+          <h3 class="date">Day-5</h3>
+          <img src="" alt="" id="forecast-icon5" />
+          <p id="temp">Temp:</p>
+          <p id="wind">Wind:</p>
+          <p id="humidity">Humidity</p>
+        </div>
+
+      </div>
+
+
+  </main>
+
+  <footer>
+    <!-- <footer> -->
+    <p>&copy; MacKarimi</p>
+  </footer>
+
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
