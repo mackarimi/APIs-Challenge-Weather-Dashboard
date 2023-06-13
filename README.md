@@ -88,4 +88,4 @@ Special thanks to https://developer.mozilla.org/ for their contributions to the 
 ## Deployed
 
 This project is deployed at [https://github.com/mackarimi/Weather-Dashboard-API].
-Click for Webpage: https://mackarimi.github.io/Weather-Dashboard-API
+Click for Webpage: [https://mackarimi.github.io/APIs-Challenge-Weather-Dashboard/]
